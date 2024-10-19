@@ -19,3 +19,20 @@
 .main {
     overflow-y: scroll; /* Enables vertical scrolling */
 }
+
+.main__posting-announcement-card{
+    background-color: #ffff;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+}
+.main__posting-announcement-card > :nth-child(2) {
+    width: 100%;
+}
+.main__posting-announcement-card > div >input{
+    border: 1px solid gray;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
