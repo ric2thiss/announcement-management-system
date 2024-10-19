@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+    --colorOfHeaderDARK: #1d212c;
+    --colorOfHeaderButtonYELLOW: #fdcd56;
+    --colorOfCategoryBackground: #e9edf1;
+    --colorOfSmallDivider: #f3f6f95b;
+    --backgroundColorOfAnnouncementAtag: #333847;
+}
+
+html, body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--colorOfHeaderDARK);
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Keep the header fixed at the top */
+}
+
+main {
+    background-color: #f3f6f9;
+    display: flex;
+    flex-grow: 1; /* Ensures that main takes up the remaining space */
+    justify-content: space-between;
+}
+
+.small-divider {
+    background-color: var(--colorOfSmallDivider);
+    width: 1px;
+    height: 2rem;
+}
+
+.colorOfSmallDivider {
+    color: var(--colorOfSmallDivider);
+}
+
+.menu-1, .menu-2 {
+    width: 5%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color:#ffff;
+}
+
+.menu-1 > div, .menu-2 > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    height: 100%;
+    flex-direction: column;
+}
+
+.post-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post-container > .category {
+    width: 20%;
+    /* height: 100vh; */
+    position: sticky;
+    margin-top: 5rem;
+    top: 0;
+    overflow-y: auto; /* Allows scrolling if the aside content is long */
+    
+}
+.category section{
+    background-color: #e9edf1;
+    padding: 1.5rem 2rem;
+    border-radius: 14px;
+}
+.category-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.add-category-span-element{
+    display: flex; 
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.all-announcement{
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    padding: 1rem;
+}
+.pinned-post{
+    background-color: #ffff;
+}
+.post-container > .pinned-post{
+    width: 20%;
+    /* height: 100vh; */
+    position: sticky;
+    margin-top: 5rem;
+    top: 0;
+    overflow-y: auto; /* Allows scrolling if the aside content is long */
+}
+
+.post-container > aside >h1{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+/* .post-container > aside > section >div {
+    background-color: #e9edf1;
+    padding: 1rem;
+    
+} */
+
+.main {
+    width: 50%;
+    /* background-color: aqua; */
+    height: 100vh;
+    overflow-y: auto; /* Makes only the main section scrollable */
+    padding: 1rem;
+}
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.main::-webkit-scrollbar {
+    display: none; /* This hides the scrollbar */
+}
+
+/* Hide scrollbar for IE, Edge, and Firefox */
+.main {
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+}
+
+/* Make sure scrolling is still functional */
+.main {
+    overflow-y: scroll; /* Enables vertical scrolling */
+}
+
+
+.menu-2 {
+    width: 5%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    background-color: #1d212c79;
+}

@@ -1,15 +1,14 @@
 import React from 'react'
 import logo from '../assets/amsystems_logo.svg';
 import profile from '../assets/profile.jpg';
-import '../global/global.css';
-
 function Header() {
   return (
     <>
-            <header class="flex items-center justify-between px-3">
+        <div class="header">
+        <header class="flex items-center justify-between px-3">
             <section class="flex gap-3 items-center text-white">
                 <div class="logo flex items-center">
-                    <img src={logo} alt="Website logo" class="" />
+                    <img src={logo} alt="Website logo" class=""/>
                     <div class="system-name">AMSystem</div>
                 </div>
                 <div class="small-divider"></div>
@@ -19,9 +18,9 @@ function Header() {
             </section>
             <section class="">
                 <div class="flex gap-3 items-center">
-                    <a href="#" class="colorOfSmallDivider">Dashboard</a>
+                    <a href="" class="colorOfSmallDivider">Dashboard</a>
                     <span class="small-divider"></span>
-                    <a href="#" class="bg-[#333847] text-white px-3 py-1 rounded-md">    Announcement</a>
+                    <a href="" class="bg-[#333847] text-white px-3 py-1 rounded-md">Announcement</a>
                 </div>
             </section>
             <section>
@@ -38,12 +37,13 @@ function Header() {
                         </button>
                     </div>
                     <div class="profile">
-                        <img src={profile} alt="SAMPLE" class="rounded-full" width="50" />
+                        <img src={profile} alt="SAMPLE" class="rounded-full" width="50"/>
                     </div>
                 </div>
             </section>
            
         </header>
+    </div>
     </>
   )
 }
