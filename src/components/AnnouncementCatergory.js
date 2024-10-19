@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './AnnouncementCatergory.css'
+
 function AnnouncementCatergory() {
   return (
     <>

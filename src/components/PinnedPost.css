@@ -1,0 +1,16 @@
+.pinned-post{
+    background-color: #ffff;
+}
+.pinned-post{
+    width: 20%;
+    position: sticky;
+    margin-top: 5rem;
+    top: 0;
+    overflow-y: auto; 
+}
+
+.post-container > aside >h1{
+    font-size: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

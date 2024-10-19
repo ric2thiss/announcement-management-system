@@ -1,0 +1,15 @@
+.post-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.post-container > .category {
+    width: 20%;
+    /* height: 100vh; */
+    position: sticky;
+    margin-top: 5rem;
+    top: 0;
+    overflow-y: auto; /* Allows scrolling if the aside content is long */
+    
+}

@@ -3,6 +3,8 @@ import AnnouncementCatergory from './AnnouncementCatergory'
 import Main from './Main'
 import PinnedPost from './PinnedPost'
 
+import './ContentCards.css'
+
 function ContentCards() {
   return (
     <>

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './PinnedPost.css'
+
 function PinnedPost() {
   return (
     <>

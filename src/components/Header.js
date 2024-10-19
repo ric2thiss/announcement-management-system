@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../assets/amsystems_logo.svg';
 import profile from '../assets/profile.jpg';
+import './Header.css';
 function Header() {
   return (
     <>
