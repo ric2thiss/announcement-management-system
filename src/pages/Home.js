@@ -1,15 +1,15 @@
 import React from 'react'
-import Navbar from '../components/Navbar';
-import ContentCards from '../components/ContentCards';
+import Header from '../components/Header'
+import MainContainer from '../components/MainContainer'
+
 
 function Home() {
   return (
     <>
-        <main>
-            <Navbar />
-            <ContentCards />
-            <Navbar />
-        </main>
+        <body class="bg-gray-100">
+          <Header />
+          <MainContainer />
+        </body>
     </>
   )
 }
